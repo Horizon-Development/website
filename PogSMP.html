@@ -27,9 +27,21 @@
       
     </div>
     <div class="main">
-      <p>
-        
-      </p>
+<p>Click on the button to copy the Server IP</p>
+
+<input type="text" value="Hello World" id="myInput">
+<button onclick="myFunction()">Copy text</button>
+
+<p>The document.execCommand() method is not supported in IE8 and earlier.</p>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+}
+</script>
     </div>
     <div class="footer">
       <P>
