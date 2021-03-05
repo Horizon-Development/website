@@ -89,9 +89,21 @@
   padding: 10px 15px;
   border: none;
 }
-
+  
 .openbtn:hover {
   background-color: #444;
+}
+</style>
+</head>
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="focus-logo" href="https://horizoncommunity.cf/"><img src="horizoncommunityicon.png" alt="Horizon Community" height="40"></a>
+  <a href="PogSMP">PogSMP</a>
+  <a href="horizonbot">Horizon Bot</a>
+</div>
+.openbtn:hover {
+  background-color: #444;
+<script>
 }
 /* Set the width of the sidebar to 250px (show it) */
 function openNav() {
@@ -102,17 +114,9 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
-</style>
-</head>
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a class="focus-logo" href="https://horizoncommunity.cf/"><img src="horizoncommunityicon.png" alt="Horizon Community" height="40"></a>
-  <a href="PogSMP">PogSMP</a>
-  <a href="horizonbot">Horizon Bot</a>
-</div>
+</script>
 <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
 <h2>Collapsed Sidepanel</h2>
-
 
 <div class="navbar">
   <a class="focus-logo" href="https://horizoncommunity.cf/"><img src="horizoncommunityicon.png" alt="Horizon Community" height="40"></a>
