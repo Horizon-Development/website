@@ -93,6 +93,15 @@
 .openbtn:hover {
   background-color: #444;
 }
+/* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
 </style>
 </head>
 <div id="mySidepanel" class="sidepanel">
@@ -103,16 +112,8 @@
 </div>
 <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
 <h2>Collapsed Sidepanel</h2>
-<p>Content...</p>
-  /* Set the width of the sidebar to 250px (show it) */
-function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
-}
 
-/* Set the width of the sidebar to 0 (hide it) */
-function closeNav() {
-  document.getElementById("mySidepanel").style.width = "0";
-}
+
 <div class="navbar">
   <a class="focus-logo" href="https://horizoncommunity.cf/"><img src="horizoncommunityicon.png" alt="Horizon Community" height="40"></a>
   <a href="PogSMP">PogSMP</a>
